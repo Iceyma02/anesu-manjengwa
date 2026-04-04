@@ -1,3 +1,5 @@
+Here is the updated HTML code with the requested fixes, including the updated semester cards, corrected hero title, added missing certifications, and a typewriter effect for the hero role.
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,6 +45,7 @@ nav.scrolled{background:rgba(8,12,15,0.95);backdrop-filter:blur(20px);padding:14
 .hero-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(72px,12vw,160px);line-height:.9;letter-spacing:2px;color:var(--text);opacity:0;transform:translateY(30px);animation:fadeUp .8s .35s forwards}
 .hero-name span{color:var(--teal)}
 .hero-title{font-family:'DM Serif Display',serif;font-style:italic;font-size:clamp(18px,2.5vw,28px);color:var(--text-muted);margin:24px 0 40px;opacity:0;transform:translateY(20px);animation:fadeUp .7s .55s forwards}
+#typed-role{display:inline-block;min-width:220px;color:var(--teal);border-right:2px solid var(--teal);padding-right:4px;white-space:nowrap;overflow:hidden;vertical-align:middle}
 .hero-desc{max-width:540px;font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:48px;opacity:0;transform:translateY(20px);animation:fadeUp .7s .7s forwards}
 .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;opacity:0;transform:translateY(20px);animation:fadeUp .7s .85s forwards}
 .btn-primary{background:var(--teal);color:var(--bg);padding:14px 36px;border-radius:4px;text-decoration:none;font-weight:600;font-size:14px;letter-spacing:1px;text-transform:uppercase;transition:all .3s;display:inline-block}
@@ -154,8 +157,9 @@ section{padding:120px 60px}
 .sem-card:hover{border-color:var(--teal-dim)}
 .sem-title{font-family:'Bebas Neue',sans-serif;font-size:17px;color:var(--teal);letter-spacing:1px;margin-bottom:3px}
 .sem-sgpa{font-size:10px;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px}
-.sem-course{font-size:12px;color:var(--text-muted);padding:3px 0;border-bottom:0.5px solid var(--surface2)}
+.sem-course{font-size:12px;color:var(--text-muted);padding:5px 0;border-bottom:0.5px solid var(--surface2);display:flex;justify-content:space-between;align-items:center}
 .sem-course:last-child{border-bottom:none}
+.sem-course-name{font-weight:400}
 .sem-grade{color:var(--teal-dim);font-weight:500;font-size:11px}
 
 /* CONTACT */
@@ -208,7 +212,7 @@ footer{background:var(--bg);border-top:0.5px solid var(--surface2);padding:32px 
   <div class="hero-grid"></div>
   <p class="hero-eyebrow">Open to opportunities</p>
   <h1 class="hero-name">Anesu<br/><span>Manjengwa</span></h1>
-  <p class="hero-title">Data Analytics &amp; Machine Learning & Predictive Analytics</p>
+  <p class="hero-title">Data Analyst · <span id="typed-role"></span></p>
   <p class="hero-desc">
 BCA Graduate (First Class with Distinction) specializing in data analytics, machine learning, and dashboard development. Experienced in building real-world data systems across retail, finance, health, HR, Mining and operations. Actively seeking entry-level to junior Data Analyst / Data Scientist roles.
 </p>
@@ -328,9 +332,9 @@ BCA Graduate (First Class with Distinction) specializing in data analytics, mach
 </section>
 
 <!-- CERTIFICATIONS -->
-<section id="certs"><div class="certs-layout"><div class="certs-sticky"><p class="section-label reveal">Credentials</p><h2 class="section-heading reveal" style="font-size:clamp(36px,5vw,64px)">Certified<br/><span style="color:var(--teal)">Expert</span></h2><div class="teal-divider reveal"></div><p class="reveal" style="font-size:14px;color:var(--text-muted);max-width:280px;line-height:1.8">Professional certifications from the world's leading institutions in data science, analytics, and finance.</p></div><div class="certs-list"><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">IBM Data Science Professional Certificate</div><div class="cert-org">IBM</div></span><span class="cert-year">2023</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Data Analytics Job Simulation</div><div class="cert-org">Deloitte</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Data Analytics Job Simulation</div><div class="cert-org">Quantium</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Data Visualization: Empowering Business with Effective Insights</div><div class="cert-org">TATA</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Data Analytics Essentials</div><div class="cert-org">Cisco Networking Academy</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Introduction to R Programming</div><div class="cert-org">Udemy</div></span><span class="cert-year">2024</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Data Science Job Simulation</div><div class="cert-org">BCGx</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">GenAI Powered Data Analytics</div><div class="cert-org">TATA</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Markets Quantitative Analytics</div><div class="cert-org">Citi</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Generative AI Simulation</div><div class="cert-org">BCGx</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Quantitative Research Simulation</div><div class="cert-org">JP Morgan &amp; Co</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Data Science Simulation</div><div class="cert-org">Lloyd's Banking Group</div></span><span class="cert-year">2025</span></div></div></div></section>
+<section id="certs"><div class="certs-layout"><div class="certs-sticky"><p class="section-label reveal">Credentials</p><h2 class="section-heading reveal" style="font-size:clamp(36px,5vw,64px)">Certified<br/><span style="color:var(--teal)">Expert</span></h2><div class="teal-divider reveal"></div><p class="reveal" style="font-size:14px;color:var(--text-muted);max-width:280px;line-height:1.8">Professional certifications from the world's leading institutions in data science, analytics, and finance.</p></div><div class="certs-list"><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">IBM Data Science Professional Certificate</div><div class="cert-org">IBM</div></span><span class="cert-year">2023</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Data Analytics Job Simulation</div><div class="cert-org">Deloitte</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Data Analytics Job Simulation</div><div class="cert-org">Quantium</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Data Visualization: Empowering Business with Effective Insights</div><div class="cert-org">TATA</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Data Analytics Essentials</div><div class="cert-org">Cisco Networking Academy</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Introduction to R Programming</div><div class="cert-org">Udemy</div></span><span class="cert-year">2024</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Data Science Job Simulation</div><div class="cert-org">BCGx</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">GenAI Powered Data Analytics</div><div class="cert-org">TATA</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Markets Quantitative Analytics</div><div class="cert-org">Citi</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Generative AI Simulation</div><div class="cert-org">BCGx</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Quantitative Research Simulation</div><div class="cert-org">JP Morgan &amp; Co</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Data Science Simulation</div><div class="cert-org">Lloyd's Banking Group</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Business Analytics with Excel</div><div class="cert-org">Deloitte</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Cybersecurity Fundamentals</div><div class="cert-org">IBM</div></span><span class="cert-year">2024</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Identity & Access Management</div><div class="cert-org">Cisco</div></span><span class="cert-year">2025</span></div><div class="cert-item"><span class="cert-dot"></span><span><div class="cert-name">Information Security Awareness</div><div class="cert-org">Google</div></span><span class="cert-year">2025</span></div></div></div></section>
 
-<!-- EDUCATION -->
+<!-- EDUCATION with full semester detail -->
 <section id="education">
   <p class="section-label reveal">Academic</p>
   <h2 class="section-heading reveal">Education</h2>
@@ -342,64 +346,12 @@ BCA Graduate (First Class with Distinction) specializing in data analytics, mach
     <div><span class="edu-badge">First Class with Distinction</span><span class="edu-badge">CGPA: 7.92 / 10</span><span class="edu-badge">Graduated Nov 2025</span></div>
   </div>
   <div class="sem-grid">
-    <div class="sem-card">
-      <div class="sem-title">Semester 1</div>
-      <div class="sem-sgpa">SGPA: 8.65 &nbsp;·&nbsp; 23 Credits</div>
-      <div class="sem-course"><span class="sem-course-name">Mathematics-1</span><span class="sem-grade">A</span></div>
-      <div class="sem-course"><span class="sem-course-name">Architectural Organization of Computers</span><span class="sem-grade">O</span></div>
-      <div class="sem-course"><span class="sem-course-name">Programming Practices-1 (C)</span><span class="sem-grade">O</span></div>
-      <div class="sem-course"><span class="sem-course-name">Basics of Web Development</span><span class="sem-grade">A</span></div>
-      <div class="sem-course"><span class="sem-course-name">Environmental Science</span><span class="sem-grade">B+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Speaking &amp; Presentation Skills</span><span class="sem-grade">A</span></div>
-    </div>
-    <div class="sem-card">
-      <div class="sem-title">Semester 2</div>
-      <div class="sem-sgpa">SGPA: 7.68 &nbsp;·&nbsp; 22 Credits</div>
-      <div class="sem-course"><span class="sem-course-name">Mathematics-2 (CONM)</span><span class="sem-grade">A</span></div>
-      <div class="sem-course"><span class="sem-course-name">Analysis &amp; Design of Systems</span><span class="sem-grade">A+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Programming Practices-2 (Advanced C)</span><span class="sem-grade">A</span></div>
-      <div class="sem-course"><span class="sem-course-name">Introduction to DBMS</span><span class="sem-grade">B+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Mini Project-1 (HTML/CSS/JS)</span><span class="sem-grade">B</span></div>
-      <div class="sem-course"><span class="sem-course-name">English Through Movies</span></div>
-    </div>
-    <div class="sem-card">
-      <div class="sem-title">Semester 3</div>
-      <div class="sem-sgpa">SGPA: 7.50 &nbsp;·&nbsp; 24 Credits</div>
-      <div class="sem-course"><span class="sem-course-name">Statistical Methods</span><span class="sem-grade">A</span></div>
-      <div class="sem-course"><span class="sem-course-name">Advances in DBMS</span><span class="sem-grade">B+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Data Structures Using C</span><span class="sem-grade">B+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Programming Practices-3 (Java)</span><span class="sem-grade">A</span></div>
-      <div class="sem-course"><span class="sem-course-name">Mini Project-2 (C)</span><span class="sem-grade">B+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Computer-Aided Drug Design</span><span class="sem-grade">A</span></div>
-    </div>
-    <div class="sem-card">
-      <div class="sem-title">Semester 4</div>
-      <div class="sem-sgpa">SGPA: 7.67 &nbsp;·&nbsp; 24 Credits</div>
-      <div class="sem-course"><span class="sem-course-name">OOAD Using UML</span><span class="sem-grade">B+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Concepts of Operating Systems</span><span class="sem-grade">A</span></div>
-      <div class="sem-course"><span class="sem-course-name">Communication Networks</span></div>
-      <div class="sem-course"><span class="sem-course-name">Programming Practices-4 (Python)</span><span class="sem-grade">B+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Mini Project-3 (Java)</span><span class="sem-grade">A+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Fitness and Wellness</span><span class="sem-grade">A</span></div>
-    </div>
-    <div class="sem-card">
-      <div class="sem-title">Semester 5</div>
-      <div class="sem-sgpa">SGPA: 8.23 &nbsp;·&nbsp; 22 Credits</div>
-      <div class="sem-course"><span class="sem-course-name">Management Information System</span><span class="sem-grade">A</span></div>
-      <div class="sem-course"><span class="sem-course-name">Software Testing</span><span class="sem-grade">A+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Data Analytics Using R</span></div>
-      <div class="sem-course"><span class="sem-course-name">Web Application Dev (PHP)</span><span class="sem-grade">A</span></div>
-      <div class="sem-course"><span class="sem-course-name">Mini Project-4 (Python)</span><span class="sem-grade">A</span></div>
-    </div>
-    <div class="sem-card">
-      <div class="sem-title">Semester 6</div>
-      <div class="sem-sgpa">SGPA: 7.82 &nbsp;·&nbsp; 22 Credits</div>
-      <div class="sem-course"><span class="sem-course-name">Cloud Computing</span><span class="sem-grade">A+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Cyber Security Essentials</span><span class="sem-grade">B+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Mobile Computing (Android)</span><span class="sem-grade">A</span></div>
-      <div class="sem-course"><span class="sem-course-name">Data Visualization</span><span class="sem-grade">B+</span></div>
-      <div class="sem-course"><span class="sem-course-name">Mini Project-5 (PHP)</span><span class="sem-grade">A+</span></div>
-    </div>
+    <div class="sem-card"><div class="sem-title">Semester 1 (Dec-2022)</div><div class="sem-sgpa">SGPA: 8.65 | Credits: 23</div><div class="sem-course"><span class="sem-course-name">05BC2101 - MATHEMATICS-1</span><span class="sem-grade">A (5cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2102 - ARCHITECTURAL ORGANIZATION OF COMPUTERS</span><span class="sem-grade">O (4cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2103 - PROGRAMMING PRACTICES-1 (C)</span><span class="sem-grade">O (5cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2104 - BASICS OF WEB DEVELOPMENT</span><span class="sem-grade">A (4cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2105 - ENVIRONMENTAL SCIENCE</span><span class="sem-grade">B+ (3cr)</span></div><div class="sem-course"><span class="sem-course-name">05SL0103 - SPEAKING & PRESENTATION SKILLS</span><span class="sem-grade">A (2cr)</span></div></div>
+    <div class="sem-card"><div class="sem-title">Semester 2 (Jan-2024)</div><div class="sem-sgpa">SGPA: 7.68 | Credits: 22</div><div class="sem-course"><span class="sem-course-name">05BC2201 - MATHEMATICS-2 (CONM)</span><span class="sem-grade">A</span></div><div class="sem-course"><span class="sem-course-name">05BC2202 - ANALYSIS AND DESIGN OF SYSTEMS</span><span class="sem-grade">A+</span></div><div class="sem-course"><span class="sem-course-name">05BC2203 - PROGRAMMING PRACTICES-2 (ADVANCED C)</span><span class="sem-grade">A (5cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2204 - INTRODUCTION TO DBMS</span><span class="sem-grade">B+</span></div><div class="sem-course"><span class="sem-course-name">05BC2205 - MINI PROJECT-1 (HTML/CSS/JS)</span><span class="sem-grade">B (2cr)</span></div><div class="sem-course"><span class="sem-course-name">05SL0153 - ENGLISH THROUGH MOVIES</span><span class="sem-grade">—</span></div></div>
+    <div class="sem-card"><div class="sem-title">Semester 3 (Nov-2023)</div><div class="sem-sgpa">SGPA: 7.50 | Credits: 24</div><div class="sem-course"><span class="sem-course-name">05BC2301 - STATISTICAL METHODS</span><span class="sem-grade">A (4cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2302 - ADVANCES IN DBMS</span><span class="sem-grade">B+ (5cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2303 - DATA STRUCTURES USING C</span><span class="sem-grade">B+ (5cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2304 - PROGRAMMING PRACTICES-3 (JAVA)</span><span class="sem-grade">A (5cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2305 - MINI PROJECT-2 (C)</span><span class="sem-grade">B+ (2cr)</span></div><div class="sem-course"><span class="sem-course-name">13OE0002 - COMPUTER-AIDED DRUG DESIGN</span><span class="sem-grade">A (3cr)</span></div></div>
+    <div class="sem-card"><div class="sem-title">Semester 4 (Apr-2024)</div><div class="sem-sgpa">SGPA: 7.67 | Credits: 24</div><div class="sem-course"><span class="sem-course-name">05BC2401 - OOAD USING UML</span><span class="sem-grade">B+ (4cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2402 - CONCEPTS OF OPERATING SYSTEMS</span><span class="sem-grade">A (4cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2403 - COMMUNICATION NETWORKS</span><span class="sem-grade">—</span></div><div class="sem-course"><span class="sem-course-name">05BC2404 - PROGRAMMING PRACTICES-4 (PYTHON)</span><span class="sem-grade">B+ (6cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2405 - MINI PROJECT-3 (JAVA)</span><span class="sem-grade">A+ (2cr)</span></div><div class="sem-course"><span class="sem-course-name">ASPOE001 - FITNESS AND WELLNESS</span><span class="sem-grade">A (3cr)</span></div></div>
+    <div class="sem-card"><div class="sem-title">Semester 5 (Dec-2024)</div><div class="sem-sgpa">SGPA: 8.23 | Credits: 22</div><div class="sem-course"><span class="sem-course-name">05BC2501 - MANAGEMENT INFORMATION SYSTEM</span><span class="sem-grade">A (4cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2502 - SOFTWARE TESTING</span><span class="sem-grade">A+ (5cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2503 - DATA ANALYTICS USING R</span><span class="sem-grade">—</span></div><div class="sem-course"><span class="sem-course-name">05BC2504 - WEB APP DEVELOPMENT (PHP)</span><span class="sem-grade">A (6cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC0509 - MINI PROJECT-4 (PYTHON)</span><span class="sem-grade">A (2cr)</span></div></div>
+    <div class="sem-card"><div class="sem-title">Semester 6 (May-2025)</div><div class="sem-sgpa">SGPA: 7.82 | Credits: 22</div><div class="sem-course"><span class="sem-course-name">05BC2601 - CLOUD COMPUTING</span><span class="sem-grade">A+ (4cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC2602 - CYBER SECURITY ESSENTIALS</span><span class="sem-grade">B+ (5cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC0608 - MOBILE COMPUTING (ANDROID)</span><span class="sem-grade">A</span></div><div class="sem-course"><span class="sem-course-name">05BC0609 - DATA VISUALIZATION</span><span class="sem-grade">B+ (5cr)</span></div><div class="sem-course"><span class="sem-course-name">05BC0611 - MINI PROJECT-5 (PHP)</span><span class="sem-grade">A+ (2cr)</span></div></div>
   </div>
 </section>
 
@@ -430,6 +382,36 @@ document.querySelectorAll('.project-card').forEach(card=>{
   card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();card.style.background=`radial-gradient(220px circle at ${e.clientX-r.left}px ${e.clientY-r.top}px,rgba(0,212,160,0.07),var(--bg3) 60%)`});
   card.addEventListener('mouseleave',()=>card.style.background='');
 });
+
+// Typewriter effect for hero role
+const roles = ["Data Analyst", "ML Engineer", "Dashboard Developer"];
+let roleIndex = 0, charIndex = 0, isDeleting = false;
+const typedSpan = document.getElementById("typed-role");
+function typeEffect() {
+  const currentRole = roles[roleIndex];
+  if (isDeleting) {
+    typedSpan.innerText = currentRole.substring(0, charIndex-1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+      setTimeout(typeEffect, 300);
+      return;
+    }
+    setTimeout(typeEffect, 60);
+  } else {
+    typedSpan.innerText = currentRole.substring(0, charIndex+1);
+    charIndex++;
+    if (charIndex === currentRole.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 2000);
+      return;
+    }
+    setTimeout(typeEffect, 100);
+  }
+}
+typeEffect();
 </script>
 </body>
 </html>
+```
